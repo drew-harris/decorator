@@ -1,9 +1,11 @@
 #include "border.h"
 #include "scroll.h"
-#include "window.h"
 #include "ui.h"
+#include "window.h"
 #include <iostream>
 
 int main() {
-    UI *pWindow = new Border(new Scroll (new Window()));
+    UI *pWindow = new Scroll(new Border(new Window()));
+
+    pWindow->draw();
 }

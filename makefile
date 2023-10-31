@@ -1,6 +1,6 @@
 buildLinux:
 	clear
-	clang++ -o app main.cpp
+	clang++ -o app ./**.cpp
 
 run:
 	clear

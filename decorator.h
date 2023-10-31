@@ -7,5 +7,5 @@ class Decorator : public UI {
   public:
     Decorator(UI *ui);
 
-    void draw();
+    void draw() override;
 };
